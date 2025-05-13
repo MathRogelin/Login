@@ -1,0 +1,63 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: rgb(88,244,196);
+    background: linear-gradient(90deg, rgba(88,244,196,1) 41%, rgba(16,249,228,1) 67%);
+}
+.telaLogin{
+    height: 90%;
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    overflow: hidden;
+    border-radius: 50px;
+}
+.loginImg{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(https://cdn.pixabay.com/photo/2017/03/21/02/00/user-2160923_640.png);
+}
+.loginText{
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.textInputs{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+.textInputs input[type = submit]{
+    background: rgb(88,244,196);
+    background: linear-gradient(90deg, rgba(88,244,196,1) 41%, rgba(16,249,228,1) 67%);
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+}
+#inUsername, #inPassword{
+    background-color: #fff;
+    border: 1px solid #fff;
+    border-bottom:2px solid cyan;
+    padding: 10px;
+}
+a{
+    font-size: 15px;
+}
+@media (max-width:965px) {
+    .telaLogin{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .loginImg{
+        display: none;
+    }
+}
